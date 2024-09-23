@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Suresh Portfolio</title>
+</head>
+<style>
+    *{
+        box-sizing: 0;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:#272829;
+        }
+    body a{
+        text-decoration: none;
+    }
+    .navbar-link{
+        display: flex;
+        gap: 40px; 
+        font-weight: bold;
+    }
+   /* .navbar-link:hover{
+    color: #c5d117;
+    text-decoration: underline;
+   } */
+    .navbar{
+        display: flex;
+        background-color: #2e2825;
+        padding:20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar a{
+    color:#c5d117;
+    }
+    .navbar-link a:hover{
+            color: white;
+            filter: drop-shadow(0 0 10px  #c5d117 );
+            
+         }
+    .nav-logo{
+        font-weight: bolder; 
+    }
+    .nav-btn{
+        display: flex;
+        gap: 40px;
+        font-weight: bolder;
+        
+         }
+         .nav-btn .btn{
+         border: 3px solid #c5d117;
+         padding: 6px 10px; 
+         border-radius: 50px;
+         box-shadow: #946611;
+         
+         
+         }
+         .nav-btn .btn:hover{
+            background-color: #c5d117;
+            color:white;
+            filter: drop-shadow(0 0 10px #1eca60);
+        
+         }
+         .welecome{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height: 700px;
+            gap:25px;   
+         }
+         .welecome h1{
+            font-size: 50px;
+         }
+         .welecome p{
+            font-style: italic;
+            font-size: medium;
+         }
+          .btn{
+            color: white;
+            border: 3px solid #c5d117;
+            padding:10px; 
+            border-radius: 50px;  
+         }
+          span{
+            padding-top:20px;
+         }
+         .btn:hover{
+            background-color: #c5d117;
+            color:white;
+            filter: drop-shadow(0 0 10px #1eca60);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+         }
+         .about{
+            text-align: center;
+            background-color: rgb(51, 46, 46);
+            padding: 50px 20px;
+         }
+         .about h2{
+        
+            color: #c5d117;
+            font-weight: bolder;
+            font-size: 30px;
+         }
+         .about p{
+            color: white;
+            padding: 20px 150px;
+            text-align: center;
+            line-height: 25px;
+         }
+         .about .btn{
+            padding: 10px 50px;
+            text-align: center;
+            width: 50px;
+         }
+         .project-session{
+            margin:50px;
+            text-align:center;
+         }
+         .project-session h2{
+            color:#c5d117;
+            margin-bottom:30px
+         }
+         .project-container{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+         }
+         .project-card{
+            background-color:#2e2825;
+            color: white;
+            border: 1px solid #c5d117;
+            padding: 20px;
+            border-radius:10px;
+            width:300px;
+            text-align: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px #c5d117;
+
+         }
+         .project-card:hover{
+            transform:translateY(-8px);
+        
+         }
+         .project-session img{
+            border: 1px solid #c5d117;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+         }
+         .project-session h2{
+            margin-bottom: 30px;
+            font-size: 40px;
+            
+         }
+         .project-session .veiw-details{
+            border:none;
+            padding: 10px 10px;
+            font-size: 15px;
+            cursor:pointer;
+            border-radius: 50px;   
+         }
+         .project-session .veiw-details:hover{
+            background-color: #c5d117;
+            color:white;
+            filter: drop-shadow(0 0 10px #1eca60);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+         }
+         .project-session p{
+            padding: 15px 0;
+            text-align: center;
+         }
+         .technical-proficiency{
+            align-items: center;
+            background-color: #454647;
+
+         }
+         .tech-proficiency h2{
+            margin-bottom: 20px;
+            color: white;
+         }
+         .skills{
+            text-align:center;
+            color: #c5d117;
+            padding: 5px 20px;
+
+
+         }
+         .skills h1{
+            color: #c5d117;
+            font-weight: bolder;
+            font-size: 36px;
+            margin-bottom: 40px;
+         }
+         .skills .c1{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+         }
+         .skills .cards{
+            background-color:#2e2825;
+            color: white;
+            border: 1px solid #c5d117;
+            padding: 20px;
+            border-radius:10px;
+            width:300px;
+            text-align: center;
+            justify-content: center;
+            margin-top: 30px;
+            box-shadow: 0 4px 10px #c5d117;
+         }
+         .skills .cards:hover{
+            transform:translateY(-10px);
+            background-color: #454647;
+         }
+         .footer{
+            background-color:#2e2825;
+            color:lightgoldenrodyellow;
+            text-align: center;
+            padding: 20px 0;
+
+         }
+            .footer a{
+                margin:0;
+                font-size: 18px;  
+                color:white;
+            } 
+            .footer a:hover{
+                transform: translateX(10px);
+                color:#c5d117
+                
+            }       
+</style>
+<body>
+    <nav class="navbar">
+        <a href="#" class="nav-logo">VIP DESIGNS</a>
+        <div class="navbar-link">
+            <a href="#">Home</a>
+            <a href="#">Service</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="nav-btn">
+            <a href="" class="btn">Login</a>
+            <a href="" class="btn">Signup</a>
+        </div>
+    </nav>
+    <section class="welecome">
+        <h1>Welecome to VIP DESIGNS</h1>
+        <p>Vip Design is where innovation meets elegance, catering to those who demand only the best</p>
+        <span><a href="#" class="btn">Explore more</a></span> 
+    </section>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>"Welcome to VIP Design" is a professional, elegant, and sophisticated design service that offers premium and bespoke solutions for clients seeking top-tier design btnertise. Whether it's graphic design, branding, web design, or interior design, VIP Design focuses on providing personalized, high-quality creations that stand out. Each project is handled with meticulous attention to detail, creativity, and a focus on delivering a luxurious and exclusive btnerience for every client.
+             VIP Design is where innovation meets elegance, catering to those who demand only the best.</p>
+             <div class="more">
+             <a href="#" class="btn">Learn More</a>
+            </div>
+    </section>
+    <section class="project-session">
+        <h2>Our Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://www.uship.com/learn/ca/wp-content/uploads/sites/3/thumbnail-placeholder-300x200-300x200.png" alt="">
+                <h3>Aluminium Pro</h3>
+                <p>Optimized maufacturing workflows using predictive model, reducing costs, and boosting efficiency.</p>
+                <button class="veiw-details"><a href="https://aluminium-pro.onrender.com/">View Details</a></button>
+            </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://www.uship.com/learn/ca/wp-content/uploads/sites/3/thumbnail-placeholder-300x200-300x200.png" alt="">
+                </div>
+                <h3>Translator Pro</h3>
+                <p>A Translator is someone who converts text or speech from one language to another, making it understandable for people who speaks different languages..</p>
+                <button class="veiw-details"><a href="https://translator-pro.onrender.com/login">View Details</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <h2>Technical Proficiency</h2>
+        <div class="c1">
+        <div class="cards">
+            <i class="fa-brands fa-python"></i>
+            <h3>Python</h3>
+        </div>
+        <div class="cards">
+        <i class="fa-brands fa-html5"></i>
+            <h3>HTML</h3>
+        </div>
+        <div class="cards">
+        <i class="fa-brands fa-css3"></i>
+            <h3>CSS</h3>
+        </div>
+        <div class="cards">
+        <i class="fa-solid fa-database"></i>
+            <h3>MY SQL</h3>
+        </div>
+    </div>
+    </section>
+    <section class="project-session">
+        <h2>Internships</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://www.uship.com/learn/ca/wp-content/uploads/sites/3/thumbnail-placeholder-300x200-300x200.png" alt="">
+                <h3>Polenza</h3>
+                <p>Web Application Framwork python flask with Mongo DB</p>
+                <button class="veiw-details"><a href="https://www.polenzatech.com/">View Details</a></button>
+            </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://www.uship.com/learn/ca/wp-content/uploads/sites/3/thumbnail-placeholder-300x200-300x200.png" alt="">
+                </div>
+                <h3>Shiash</h3>
+                <p>Web Application Framwork python  with Django</p>
+                <button class="veiw-details"><a href="https://shiash.com/">View Details</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 VIP Design. All Rights Reveresed.</p>
+        <p><a href="">Privacy Policy</a>|
+        <a href="">Terms of Services</a>|
+        <a href="">Contact us</a>
+        </p>
+    </footer>   
+</body>
+</html>
